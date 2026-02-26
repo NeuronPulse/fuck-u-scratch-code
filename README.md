@@ -32,7 +32,12 @@
 ## 🚀 使用方法
 
 在终端或命令行中运行脚本，并传入你要检测的 `.sb3` 或  文件路径：
+#### 发行版本
+```bash
+fuck-u-sb-code path/to/your/project.sb3
+```
 
+#### py
 ```bash
 python src.py path/to/your/project.sb3
 ```
