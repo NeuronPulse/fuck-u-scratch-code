@@ -23,9 +23,9 @@
 ## 📦 安装说明
 
 1. 确保你的电脑上安装了 Python 3.6 或更高版本。
-2. 安装终端美化依赖库 `rich`：
+2. 安装依赖库：
    ```bash
-   pip install rich
+   pip install -r requirements.txt
    ```
 3. 下载本仓库的脚本文件（如 `sb3_analyzer.py`）。
 
