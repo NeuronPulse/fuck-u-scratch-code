@@ -27,28 +27,33 @@
    ```bash
    pip install -r requirements.txt
    ```
-3. 下载本仓库的脚本文件（如 `sb3_analyzer.py`）。
+3. 下载本仓库的脚本文件
 
 ## 🚀 使用方法
 
-在终端或命令行中运行脚本，并传入你要检测的 `.sb3` 或 `.pmp` 文件路径：
-
+在终端或命令行中运行脚本，并传入你要检测的 `.sb3` 或  文件路径：
+#### 发行版本
 ```bash
-python sb3_analyzer.py path/to/your/project.sb3
+fuck-u-sb-code path/to/your/project.sb3
+```
+
+#### py
+```bash
+python src.py path/to/your/project.sb3
 ```
 
 ### 🛠️ 进阶参数
 
 | 参数 | 描述 | 默认值 |
 | :--- | :--- | :--- |
-| `file` | 必填，要评判的 `.sb3` / `.pmp` 文件路径。 | - |
+| `file` | 必填，要评判的 `.sb3`  文件路径。 | - |
 | `--top` | 最多显示的扣分项数量，项目太大时可以只看最严重的问题。 | `20` |
 | `--name-width` | 指定第一列(角色名)的列宽，防止长名字被截断。 | `18` |
 | `--lenient` | 开启**【宽松模式】**：降低检测标准并减少扣分（适合老旧的大型项目）。 | `False` |
 
 **示例：使用宽松模式，并显示前 50 个严重问题**
 ```bash
-python sb3_analyzer.py project.pmp --lenient --top 50
+python src.py project.sb3 --lenient --top 50
 ```
 
 ## 📊 屎山评级标准
